@@ -32,21 +32,6 @@ export const servicesData: Service[] = [
     expanded: false,
   },
   {
-    id: 'fractional-cto',
-    name: 'Fractional CTO',
-    description:
-      'Part-time technical leadership on a flexible basis. David provides CTO-level guidance, architecture decisions, and team leadership without the full-time commitment. Scales from a few hours to multiple days per week.',
-    whoItIsFor:
-      'Growing companies that have strong engineering fundamentals but need senior technical guidance to scale. Ideal for teams with a solid VP Engineering or Tech Lead who wants executive-level strategic support.',
-    keyOutcomes: [
-      'Strategic technical guidance and architecture review',
-      'Support for critical infrastructure decisions',
-      'Engineering team mentoring and leadership coaching',
-      'Flexible engagement that scales with your needs',
-    ],
-    expanded: false,
-  },
-  {
     id: 'engineering-leadership',
     name: 'Engineering Leadership',
     description:
@@ -58,6 +43,21 @@ export const servicesData: Service[] = [
       'Build high-performing, cohesive teams',
       'Navigate organizational challenges and transitions',
       'Create sustainable engineering cultures',
+    ],
+    expanded: false,
+  },
+  {
+    id: 'fractional-cto',
+    name: 'Fractional CTO',
+    description:
+      'Part-time technical leadership on a flexible basis. David provides CTO-level guidance, architecture decisions, and team leadership without the full-time commitment. Scales from a few hours to multiple days per week.',
+    whoItIsFor:
+      'Growing companies that have strong engineering fundamentals but need senior technical guidance to scale. Ideal for teams with a solid VP Engineering or Tech Lead who wants executive-level strategic support.',
+    keyOutcomes: [
+      'Strategic technical guidance and architecture review',
+      'Support for critical infrastructure decisions',
+      'Engineering team mentoring and leadership coaching',
+      'Flexible engagement that scales with your needs',
     ],
     expanded: false,
   },
