@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "models": {
+      "EngagementType": "Represents the types of engagement someone can express interest in (Technical Consulting, Full-time CTO, Fractional CTO, Engineering Leadership).",
+      "Inquiry": "Represents a contact form submission capturing name, email, optional message, and optional engagement type preference from a potential client or collaborator."
+    },
+    "relationships": [
+      "Inquiry optionally belongs to one EngagementType"
+    ]
+  },
+  "engagementTypes": [
+    {
+      "id": "technical-consulting",
+      "label": "Technical Consulting"
+    },
+    {
+      "id": "full-time-cto",
+      "label": "Full-time CTO"
+    },
+    {
+      "id": "fractional-cto",
+      "label": "Fractional CTO"
+    },
+    {
+      "id": "engineering-leadership",
+      "label": "Engineering Leadership"
+    }
+  ],
+  "inquiry": {
+    "id": "",
+    "name": "",
+    "email": "",
+    "message": "",
+    "engagementType": null,
+    "submitted": false
+  }
+}

@@ -1,0 +1,13 @@
+/* Design Tokens for Stack and Scale */
+
+:root {
+  /* Colors */
+  --color-primary: blue;
+  --color-secondary: orange;
+  --color-neutral: slate;
+
+  /* Typography */
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
