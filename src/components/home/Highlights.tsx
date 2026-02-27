@@ -1,4 +1,11 @@
+import { Code2, Cloud, TrendingUp } from 'lucide-react'
 import type { Highlight } from '@/types'
+
+const iconMap: Record<string, React.ReactNode> = {
+  'hands-on-leader': <Code2 className="w-6 h-6 text-blue-600 group-hover:text-orange-500 transition-colors" />,
+  'cloud-ai-expertise': <Cloud className="w-6 h-6 text-blue-600 group-hover:text-orange-500 transition-colors" />,
+  'startup-focus': <TrendingUp className="w-6 h-6 text-blue-600 group-hover:text-orange-500 transition-colors" />,
+}
 
 interface HighlightsProps {
   highlights: Highlight[]
@@ -27,7 +34,7 @@ export function Highlights({ highlights }: HighlightsProps) {
             >
               {/* Icon/Accent */}
               <div className="w-12 h-12 bg-blue-100 dark:bg-blue-950 rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-100 dark:group-hover:bg-orange-950 transition-colors">
-                <div className="w-6 h-6 bg-gradient-to-br from-blue-600 to-orange-500 rounded-md opacity-80" />
+                {iconMap[highlight.id]}
               </div>
 
               {/* Title */}

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface NavigationItem {
   label: string
   href: string
@@ -14,19 +16,14 @@ export function MainNav({ items, onItemClick }: MainNavProps) {
     <nav className="flex flex-col h-full">
       {/* Logo */}
       <div className="px-6 py-8 border-b border-slate-200 dark:border-slate-800">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">S</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="font-semibold text-slate-900 dark:text-slate-50 text-sm">
-              Stack
-            </span>
-            <span className="font-semibold text-orange-500 dark:text-orange-400 text-sm">
-              Scale
-            </span>
-          </div>
-        </div>
+        <Image
+          src="/StackAndScale.png"
+          alt="Stack and Scale"
+          width={480}
+          height={160}
+          className="h-40 w-auto"
+          priority
+        />
       </div>
 
       {/* Navigation Items */}
