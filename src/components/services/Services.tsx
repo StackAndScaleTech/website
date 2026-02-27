@@ -6,9 +6,10 @@ import { ServiceCard } from './ServiceCard'
 interface ServicesProps {
   services: Service[]
   onToggleService?: (serviceId: string) => void
+  onNavigate?: (href: string) => void
 }
 
-export function Services({ services, onToggleService }: ServicesProps) {
+export function Services({ services, onToggleService, onNavigate }: ServicesProps) {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
@@ -29,6 +30,7 @@ export function Services({ services, onToggleService }: ServicesProps) {
               key={service.id}
               service={service}
               onToggle={() => onToggleService?.(service.id)}
+              onContactClick={() => onNavigate?.('/contact')}
             />
           ))}
         </div>

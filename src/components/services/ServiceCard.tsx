@@ -6,9 +6,10 @@ import { ChevronDown } from 'lucide-react'
 interface ServiceCardProps {
   service: Service
   onToggle?: () => void
+  onContactClick?: () => void
 }
 
-export function ServiceCard({ service, onToggle }: ServiceCardProps) {
+export function ServiceCard({ service, onToggle, onContactClick }: ServiceCardProps) {
   return (
     <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
       {/* Card Header - Always Visible */}
@@ -65,7 +66,10 @@ export function ServiceCard({ service, onToggle }: ServiceCardProps) {
             </div>
 
             {/* CTA Button */}
-            <button className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-md transition-colors">
+            <button
+              onClick={onContactClick}
+              className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-md transition-colors"
+            >
               Get Started
             </button>
           </div>
