@@ -40,7 +40,7 @@ export function AppShell({
 
       {/* Sidebar */}
       <div
-        className={`fixed inset-y-0 left-0 z-40 w-64 transform bg-slate-100 dark:bg-slate-900 transition-transform duration-200 lg:relative lg:transform-none ${
+        className={`fixed inset-y-0 left-0 z-40 w-64 transform bg-black transition-transform duration-200 lg:relative lg:transform-none ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
         }`}
       >

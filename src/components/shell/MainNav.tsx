@@ -15,7 +15,7 @@ export function MainNav({ items, onItemClick }: MainNavProps) {
   return (
     <nav className="flex flex-col h-full">
       {/* Logo */}
-      <div className="px-6 py-8 border-b border-slate-200 dark:border-slate-800">
+      <div className="px-6 py-8 border-b border-slate-700">
         <Image
           src="/StackAndScale.png"
           alt="Stack and Scale"
@@ -34,8 +34,8 @@ export function MainNav({ items, onItemClick }: MainNavProps) {
             onClick={() => onItemClick?.(item.href)}
             className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
               item.isActive
-                ? 'bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border-l-4 border-blue-500'
-                : 'text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 border-l-4 border-transparent'
+                ? 'bg-blue-600 text-white border-l-4 border-blue-400'
+                : 'text-slate-300 hover:bg-slate-800 hover:text-white border-l-4 border-transparent'
             }`}
           >
             {item.label}
@@ -44,8 +44,8 @@ export function MainNav({ items, onItemClick }: MainNavProps) {
       </div>
 
       {/* Footer info */}
-      <div className="px-6 py-4 border-t border-slate-200 dark:border-slate-800">
-        <p className="text-xs text-slate-500 dark:text-slate-400">
+      <div className="px-6 py-4 border-t border-slate-700">
+        <p className="text-xs text-slate-500">
           © 2026 Stack and Scale
         </p>
       </div>
