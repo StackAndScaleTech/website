@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Stack and Scale',
   description: 'Hands-on engineering leadership for startups and mid-market companies.',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
