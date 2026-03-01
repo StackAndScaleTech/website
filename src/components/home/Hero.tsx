@@ -12,6 +12,7 @@ export function Hero({ hero, onNavigate }: HeroProps) {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto text-center">
+
         {/* Headline */}
         <div className="flex items-center justify-center gap-3 mb-6">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-slate-50">
@@ -27,10 +28,20 @@ export function Hero({ hero, onNavigate }: HeroProps) {
           />
         </div>
 
-        {/* Subheading */}
-        <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-12 leading-relaxed">
-          {hero.subheading}
-        </p>
+        {/* Photo + Subheading */}
+        <div className="flex items-start gap-4 mb-12 text-left">
+          <Image
+            src="/David -Atelier-AI.png"
+            alt="David Chancogne"
+            width={80}
+            height={80}
+            className="w-20 h-20 shrink-0 rounded-full object-cover ring-2 ring-white dark:ring-slate-800 shadow-md"
+            priority
+          />
+          <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
+            {hero.subheading}
+          </p>
+        </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -48,6 +59,7 @@ export function Hero({ hero, onNavigate }: HeroProps) {
             </button>
           ))}
         </div>
+
       </div>
     </div>
   )
