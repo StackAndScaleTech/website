@@ -24,7 +24,7 @@ export function Experience({ experiences, cta, onContactClick }: ExperienceProps
             Experience
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
-            From early-stage product development to scaling established engineering organizations — hands-on technical and leadership depth across the full arc of company growth.
+            25+ years of building, shipping, and leading. Systems that millions use, teams grown from 3 to 50+ engineers, bets that paid off — and some that didn't. Here's where the depth is.
           </p>
         </div>
 

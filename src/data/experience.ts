@@ -6,14 +6,14 @@ export const experiencesData: Experience[] = [
     title: 'Engineering Team Leadership',
     icon: 'Users',
     description:
-      'Leading engineering teams through the full spectrum of growth challenges — from hiring a team\'s first engineers to structuring squads, defining roles, and building a culture of ownership and craft. Strong at translating business goals into clear technical direction that keeps teams aligned and motivated.',
+      "Hiring the first engineer is nothing like hiring the 50th. I've built squads from scratch, restructured teams mid-growth, and navigated all the messiness in between. My most consistent lesson: hiring is everything. Culture is fragile. Good people will move mountains if they believe in what they're building.",
   },
   {
     id: 'early-stage-development',
     title: 'Early-Stage Product Development',
     icon: 'Rocket',
     description:
-      'Experience building in the zero-to-one phase: moving fast, validating assumptions, and making pragmatic technical decisions that preserve optionality without accumulating crippling debt. Comfortable operating under ambiguity and helping founders figure out what to build next.',
+      "The zero-to-one phase is chaos by design — and I'm comfortable in it. I've made the call to move fast and cut corners when it was the right call, and made the call to slow down and build it right when the shortcuts would've cost more later. Helping founders figure out what to build next is one of my favourite things to do.",
   },
   {
     id: 'engineering-practices',
@@ -53,7 +53,7 @@ export const experiencesData: Experience[] = [
 ]
 
 export const ctaData: ExperienceCTA = {
-  heading: 'Ready to work together?',
-  description: "Let's talk about how Stack and Scale can help your company build and grow.",
+  heading: 'Want to work together?',
+  description: "If you're building something and need a partner who can help you navigate the hard parts, let's talk.",
   buttonText: 'Get in touch',
 }
