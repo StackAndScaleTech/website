@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { label: 'Experience', href: '/experience' },
   { label: 'Services', href: '/services' },
   { label: 'Contact & Engage', href: '/contact' },
+  { label: 'Claude for Small Biz', href: '/claude-for-small-business' },
 ]
 
 export function ClientShell({ children }: { children: React.ReactNode }) {
