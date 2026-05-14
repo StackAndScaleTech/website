@@ -7,37 +7,39 @@ import Image from 'next/image'
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title: 'Claude AI for Small Business | Setup & Ongoing Support | Stack & Scale',
+  title: 'Claude AI for Small Business | Cambridge & Boston, MA | Stack & Scale',
   description:
-    'We set up Claude AI for small businesses and stay on as your retainer. Get Anthropic\'s Claude working inside your tools — QuickBooks, HubSpot, Slack, and more — without the guesswork.',
+    'Stack & Scale helps small businesses in Cambridge and Boston, MA set up Claude AI and run it long-term. We connect Claude to QuickBooks, HubSpot, Slack, and more — then stay on as your retainer.',
   keywords: [
-    'Claude AI for small business',
-    'Anthropic Claude small business setup',
-    'AI implementation consultant small business',
-    'Claude AI retainer support',
-    'Claude for small business implementation',
-    'AI assistant setup small business',
-    'Anthropic AI consultant',
-    'small business AI automation',
-    'Claude AI setup service',
-    'AI tools for small business owners',
+    'Claude AI for small business Cambridge MA',
+    'Claude AI setup Boston',
+    'Anthropic Claude small business Boston',
+    'AI consultant Cambridge Boston MA',
+    'Claude AI implementation Greater Boston',
+    'AI retainer support Cambridge Massachusetts',
+    'small business AI automation Boston',
+    'Claude for small business near Boston',
+    'AI setup consultant Cambridge',
+    'Anthropic AI consultant Boston MA',
+    'Claude AI setup service Massachusetts',
+    'AI tools for small business owners Greater Boston',
   ],
   openGraph: {
-    title: 'Claude AI for Small Business | Setup & Ongoing Support | Stack & Scale',
+    title: 'Claude AI for Small Business | Cambridge & Boston, MA | Stack & Scale',
     description:
-      'We set up Claude AI for your small business and stay on as your retainer. Stop losing hours to admin work. Start running your business with AI.',
-    url: 'https://stackandscale.io/claude-for-small-business',
+      'We set up Claude AI for small businesses in Cambridge and Boston, MA — and stay on as your retainer. Stop losing hours to admin work.',
+    url: 'https://www.stackandscale.tech/claude-for-small-business',
     siteName: 'Stack & Scale',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Claude AI for Small Business | Stack & Scale',
+    title: 'Claude AI for Small Business | Cambridge & Boston | Stack & Scale',
     description:
-      'Expert Claude AI setup and retainer support for small businesses. We connect Claude to your tools and keep it running.',
+      'Expert Claude AI setup and retainer support for small businesses in Cambridge and Boston, MA.',
   },
   alternates: {
-    canonical: 'https://stackandscale.io/claude-for-small-business',
+    canonical: 'https://www.stackandscale.tech/claude-for-small-business',
   },
 }
 
@@ -47,17 +49,37 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Claude AI Setup & Retainer for Small Business',
-  provider: {
-    '@type': 'Organization',
-    name: 'Stack & Scale',
-    url: 'https://stackandscale.io',
-  },
+  '@type': 'ProfessionalService',
+  name: 'Stack & Scale — Claude AI Setup & Retainer for Small Business',
+  url: 'https://www.stackandscale.tech',
   description:
-    'Expert implementation and ongoing retainer support for Anthropic\'s Claude AI platform for small businesses.',
-  serviceType: 'AI Consulting',
-  areaServed: 'United States',
+    'Expert implementation and ongoing retainer support for Anthropic\'s Claude AI platform for small businesses in Cambridge, Boston, and Greater Boston, MA.',
+  priceRange: '$$',
+  email: 'dchancogne@gmail.com',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Cambridge',
+    addressRegion: 'MA',
+    addressCountry: 'US',
+  },
+  areaServed: [
+    {
+      '@type': 'City',
+      name: 'Cambridge',
+      sameAs: 'https://www.wikidata.org/wiki/Q49111',
+    },
+    {
+      '@type': 'City',
+      name: 'Boston',
+      sameAs: 'https://www.wikidata.org/wiki/Q100',
+    },
+    {
+      '@type': 'State',
+      name: 'Massachusetts',
+    },
+  ],
+  serviceType: ['AI Consulting', 'AI Implementation', 'Technology Consulting'],
+  knowsAbout: ['Claude AI', 'Anthropic', 'AI Automation', 'Small Business AI'],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Claude AI Services',
@@ -66,16 +88,16 @@ const jsonLd = {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Claude AI Setup',
+          name: 'Claude AI Setup for Small Business',
           description:
-            'Full implementation of Claude for your business — tool connections, workflows, and team onboarding.',
+            'Full implementation of Claude for your business — tool connections, workflows, and team onboarding. Serving Cambridge, Boston, and Greater Boston, MA.',
         },
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Claude AI Retainer',
+          name: 'Claude AI Monthly Retainer',
           description:
             'Ongoing monthly support to keep Claude running, adapt workflows, and solve issues as they come up.',
         },
@@ -187,7 +209,7 @@ export default function ClaudeForSmallBusinessPage() {
           <div className="relative max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-blue-950/60 border border-blue-800/50 rounded-full px-4 py-2 text-sm text-blue-300 mb-8">
               <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-              Certified implementation partner for Anthropic&apos;s Claude
+              Serving Cambridge &amp; Boston, MA · Anthropic&apos;s Claude implementation partner
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-50 leading-tight mb-6">
@@ -197,9 +219,9 @@ export default function ClaudeForSmallBusinessPage() {
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10">
-              Anthropic&apos;s Claude is one of the most powerful AI assistants available for small
-              businesses. We handle the setup, connect it to the tools you already use, and stay on
-              as your retainer so you&apos;re never stuck.
+              We help small businesses in Cambridge, Boston, and across Greater Boston get
+              Anthropic&apos;s Claude up and running — connected to the tools they already use —
+              and we stay on as their retainer so they&apos;re never stuck.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -539,11 +561,13 @@ export default function ClaudeForSmallBusinessPage() {
               We&apos;re engineers, not salespeople
             </h2>
             <p className="text-slate-300 text-lg leading-relaxed mb-8">
-              Stack &amp; Scale is built on a background in hands-on engineering leadership for
-              startups and mid-market companies. We&apos;ve built systems, led technical teams, and
-              shipped products. That means when we set up Claude for your business, we&apos;re
-              thinking about reliability, security, and what happens six months from now — not just
-              getting it working for the demo.
+              Stack &amp; Scale is based in Cambridge, MA and works with small businesses across
+              the Greater Boston area — from Cambridge and Somerville to Boston proper and the
+              surrounding suburbs. We&apos;re built on a background in hands-on engineering
+              leadership for startups and mid-market companies. We&apos;ve built systems, led
+              technical teams, and shipped products. That means when we set up Claude for your
+              business, we&apos;re thinking about reliability, security, and what happens six
+              months from now — not just getting it working for the demo.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-6 mt-12">
@@ -568,6 +592,49 @@ export default function ClaudeForSmallBusinessPage() {
                   <p className="text-3xl font-bold text-blue-400 mb-2">{s.stat}</p>
                   <p className="text-slate-400 text-sm">{s.label}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ---------------------------------------------------------------- */}
+        {/* Local service area                                                */}
+        {/* ---------------------------------------------------------------- */}
+        <section className="py-20 px-6 bg-slate-900/40" aria-label="Service area">
+          <div className="max-w-4xl mx-auto">
+            <SectionLabel>Local expertise</SectionLabel>
+            <h2 className="text-3xl font-bold text-slate-50 mb-6">
+              Serving small businesses in Cambridge, Boston &amp; Greater Boston
+            </h2>
+            <p className="text-slate-300 text-lg leading-relaxed mb-8">
+              We&apos;re based in Cambridge, MA, which means we understand the kinds of businesses
+              that make up the Greater Boston ecosystem — independent retailers, professional
+              services firms, restaurants, healthcare practices, trades, and tech-adjacent
+              startups. When you work with us, you&apos;re not dealing with a national call center.
+              You get someone local who can meet in person for kickoffs and onboarding, and who
+              is genuinely invested in seeing your business run better.
+            </p>
+            <div className="flex flex-wrap gap-2" aria-label="Service areas">
+              {[
+                'Cambridge, MA',
+                'Boston, MA',
+                'Somerville, MA',
+                'Brookline, MA',
+                'Newton, MA',
+                'Watertown, MA',
+                'Arlington, MA',
+                'Lexington, MA',
+                'Waltham, MA',
+                'Medford, MA',
+                'Malden, MA',
+                'Greater Boston Area',
+              ].map((city) => (
+                <span
+                  key={city}
+                  className="text-sm text-slate-300 bg-slate-800 border border-slate-700 rounded-full px-4 py-1.5"
+                >
+                  {city}
+                </span>
               ))}
             </div>
           </div>
@@ -608,6 +675,10 @@ export default function ClaudeForSmallBusinessPage() {
                 {
                   q: 'What does it cost?',
                   a: 'Setup fees and retainer pricing depend on your business size and what you need. We scope everything on the discovery call so there are no surprises. Most clients find the retainer pays for itself within the first month in time savings alone.',
+                },
+                {
+                  q: 'Do you work with businesses in Cambridge and Boston?',
+                  a: 'Yes — Cambridge and Boston are our home base. We work with small businesses across Greater Boston, including Somerville, Brookline, Newton, Lexington, and the surrounding area. We\'re available for in-person kickoffs and onboarding sessions, and we handle ongoing support remotely.',
                 },
               ].map((faq) => (
                 <details
